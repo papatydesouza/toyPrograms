@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube Side</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .rubik-cube {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px;
+            width: 315px;
+            height: 315px;
+            background-color: black;
+        }
+
+        .rubik-cube div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .white {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="rubik-cube">
+    <div class="yellow"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="white"></div>
+    <div class="blue"></div>
+    <div class="red"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .search-box {
+            display: flex;
+            width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .search-box input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        .search-box button {
+            background-color: #89ad8b;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 0 25px 25px 0;
+        }
+        .search-box button:hover {
+            background-color: #92a793;
+        }
+        .search-box button i {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="search-container">
+    <form action="/search" method="GET" class="search-box">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+</div>
+
+</body>
+</html>
